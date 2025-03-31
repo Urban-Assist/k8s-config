@@ -75,4 +75,11 @@ spec:
             name: admin-service
             port:
               number: 8086
+      - path: /reviews
+        pathType: Prefix
+        backend:
+          service:
+            name: reviews-service
+            port:
+              number: 8089
       
